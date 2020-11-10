@@ -1,7 +1,10 @@
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  flex-wrap: wrap;
   
 }
 
@@ -16,7 +19,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: yellow transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -42,6 +45,8 @@ textarea{
   background-color: rgb(250, 217, 146);
   color: #111110;
   padding: 4px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
@@ -51,8 +56,10 @@ textarea{
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
+  font-size: 30px;
   width: 85%;
+  text-align: center;
 }
 
 .future {
@@ -66,6 +73,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  
 }
 
 .saveBtn i:hover {
@@ -76,10 +84,15 @@ textarea{
 button {
     width: 75px;
 }
-/* .row {
-    table-layout: fixed ;
-    width: 100% ;
-  }
-  button {
-    width: 25% ;
-  } */
+
+#currentDay {
+font-size: 40px;
+background-color: rgb(243, 192, 97);
+border-radius: 10px;
+width: 30%;
+border: 1px solid black;
+margin-left: 34%;
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
