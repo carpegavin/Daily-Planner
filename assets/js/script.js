@@ -1,22 +1,19 @@
-var dateDisplayEl = $('#currentDay');
 
-function displayDate() {
-    var rightNow = moment().format("MMM Do YYYY"); 
-    dateDisplayEl.text(rightNow);
-  }
-  
-displayDate()
+  //display dynamic date
+let currentDay = null, date = null;
 
-// $('[placeholder]').focus(function() {
-//     var input = $(this);
-//     if (input.val() == input.attr('placeholder')) {
-//       input.val('');
-//       input.removeClass('placeholder');
-//     }
-//   }).blur(function() {
-//     var input = $(this);
-//     if (input.val() == '' || input.val() == input.attr('placeholder')) {
-//       input.addClass('placeholder');
-//       input.val(input.attr('placeholder'));
-//     }
-//   }).blur();
+let update = function () {
+date = moment(new Date())
+currentDay.html(date.format('LLLL'));
+};
+
+$(document).ready(function(){
+currentDay = $('#currentDay')
+update();
+setInterval(update, 1000);
+});
+
+// define lets
+let userTask = $('#userTask');
+let saveBtn = $('saveBtn');
+
