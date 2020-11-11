@@ -52,6 +52,9 @@ textarea{
 .past {
   background-color: #d3d3d3;
   color: white;
+  font-size: 30px;
+  width: 85%;
+  text-align: center;
 }
 
 .present {
@@ -65,6 +68,9 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
+  font-size: 30px;
+  width: 85%;
+  text-align: center;
 }
 
 .saveBtn {
