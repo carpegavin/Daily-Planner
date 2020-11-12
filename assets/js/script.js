@@ -16,91 +16,103 @@ setInterval(update, 1000);
 //-------------------------------------------------------------------
 
 let saveBtn = $('saveBtn');
+let clearBtn = $('reset');
 
 //-------------------------------------------------------------------
 
-function myFunc(){
-    let hour9 = $('#userTask9').get(0);
-    hour9 = 9;
-}
+let hour9 = {
+    row: $('#userTask9').get(0), 
+    value: 9};
+
+let hour10 = {
+    row: $('#userTask10').get(0), 
+    value: 10};
+
+let hour11 = {
+    row: $('#userTask11').get(0), 
+    value: 11};
+
+let hour12 = {
+    row: $('#userTask12').get(0),
+    value: 12};
+
+let hour1 = {
+    row: $('#userTask1').get(0),
+    value: 1};
+
+let hour2 = {
+    row: $('#userTask2').get(0),
+    value: 2};
+
+let hour3 = {
+    row: $('#userTask3').get(0),
+    value: 3};
+
+let hour4 = {
+    row: $('#userTask4').get(0),
+    value: 4};
+
+let hour5 = {
+    row: $('#userTask5').get(0),
+    value: 5};
 
 
-// let hour9 = 9
-// $('#userTask9').get(0);
-console.log (hour9);
-
-let hour10 = 10
-$('#userTask10').get(0);
-
-let hour11 = 11
-$('#userTask11').get(0);
-
-let hour12 = 12
-$('#userTask12').get(0);
-
-let hour1 = 1
-$('#userTask1').get(0);
-
-let hour2 = 2
-$('#userTask2').get(0);
-
-let hour3 = 3
-$('#userTask3').get(0);
-
-let hour4 = 4
-$('#userTask4').get(0);
-
-let hour5 = 5
-$('#userTask5').get(0);
     
 //----------------------------------------------------------------------
 //LOGIC 
 
-// if userTask9 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask9 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
 
-//if userTask10 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask10 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
 
-//if userTask11 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask11 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
 
-//if userTask12 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask12 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
+if (hour9 < moment().hour()) 
+    {$('.present').css({"background-color":"#d3d3d3"})}
+else 
+    (hour9 > moment().hour()) 
+    {$('.present').css({"background-color":"#77dd77"})}
 
-//if userTask1 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask1 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
 
-//if userTask2 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask2 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
+console.log(hour9);
 
-//if userTask3 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask3 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
 
-//if userTask4 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask4 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
+// if (hour10 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour10 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
 
-//if userTask5 < current hour do the following
-$('.present').css({"background-color":"#d3d3d3"});
-//else userTask5 > current time do the following
-$('.present').css({"background-color":"#77dd77"});
+// if (hour11 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour11 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
 
+// if (hour12 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour12 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
+
+// if (hour1 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour1 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
+
+// if (hour2 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour2 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
+
+// if (hour3 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour3 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
+
+// if (hour4 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour4 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
+
+// if (hour5 < moment().hour())
+//     $('.present').css({"background-color":"#d3d3d3"});
+// else (hour5 > moment().hour())
+//     $('.present').css({"background-color":"#77dd77"});
 
 
 
@@ -108,20 +120,3 @@ $('.present').css({"background-color":"#77dd77"});
 //store user data
 
 // localStorage.setItem('userTask', JSON.stringify(string));
-
-
-// $('.present').css('color', '');
-
-
-// var currentTime = new Date().getHours();
-// if (document.body) {
-//     if (7 <= currentTime && currentTime < 20) {
-//         document.body.className = "past";
-//     }
-//     else {
-//         document.body.background = ;
-//     }
-// }
-
-
-//store user input into local storage using Json
