@@ -17,8 +17,8 @@ setInterval(update, 1000);
 
 const saveBtn = $('.saveBtn');
 const clearBtn = $('reset');
-const userInput = $('present')
-
+const userInput = $('present');
+const hourBtn = $('hour');
 
 //--------SET ARRAY OF OBJECTS WITH KEYS AND VALUES------------------------
 
@@ -169,12 +169,24 @@ else if (hour17.value > moment().hour())
 //------------STORE USER INPUT-----------------------------------------------
 
 function saveLocally() {
-    let data = $(this).prev().val()
-    let key = $(this).prev().attr("id")
+    let data = $(this).prev().val();
+    let key = $(this).prev().attr("id");
 
-    localStorage.setItem(key, data)
+    localStorage.setItem(key, data);
 }
 
-saveBtn.on('click', saveLocally)
+saveBtn.on('click', saveLocally);
+
 
 //---------------------------------------------------------------------------
+
+//----------------CLEAR HOURLY INPUTS--------------------------------------
+//--------needs work---------------------
+function removeLocally() {
+    let data = $(this).prev().val();
+    let key = $(this).prev().attr("id");
+
+    localStorage.removeItem(key, data);
+
+} 
+    hourBtn.on('click', removeLocally);

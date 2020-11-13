@@ -92,7 +92,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  font-style:
+ 
   
 }
 
@@ -100,6 +100,12 @@ textarea{
   font-size: 30px;
   background-color:rgb(12, 216, 12);
   transition: all .2s ease-in-out;
+  
+
+}
+.saveBtn:active {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 button {
