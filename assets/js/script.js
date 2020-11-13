@@ -19,7 +19,8 @@ let saveBtn = $('.saveBtn');
 let clearBtn = $('reset');
 let userInput = $('present')
 
-//-------------------------------------------------------------------
+
+//--------SET ARRAY OF OBJECTS---------------------------------------------------------
 
 
 let hour9 = { 
@@ -27,47 +28,48 @@ let hour9 = {
     "value": 9};
 
 let hour10 = {
-    "row": $('#userTask10').get(0), 
+    "row": $('#userTask10').val(), 
     "value": 10};
 
 let hour11 = {
-    "row": $('#userTask11').get(0), 
+    "row": $('#userTask11').val(), 
     "value": 11};
 
 let hour12 = {
-    "row": $('#userTask12').get(0),
+    "row": $('#userTask12').val(),
     "value": 12};
 
 let hour13 = {
-    "row": $('#userTask1').get(0),
+    "row": $('#userTask1').val(),
     "value": 1};
 
 let hour14 = {
-    "row": $('#userTask2').get(0),
+    "row": $('#userTask2').val(),
     "value": 2};
 
 let hour15 = {
-    "row": $('#userTask3').get(0),
+    "row": $('#userTask3').val(),
     "value": 3};
 
 let hour16 = {
-    "row": $('#userTask4').get(0),
+    "row": $('#userTask4').val(),
     "value": 4};
 
 let hour17 = {
-    "row": $('#userTask5').get(0),
+    "row": $('#userTask5').val(),
     "value": 5};
 
     
  
-//----------------------------------------------------------------------
-//LOGIC 
+//-----------------//LOGIC-------------------------------
+
+//for loop to retrieve from local storage
+
 for (i=9; i<=17; i++){
     $('#userTask'+i).val(localStorage.getItem("userTask"+i))
 }
-//-------------9---------------------------------------
 
-// $('#userTask9').val(localStorage.getItem("userTask9"))
+//-------------9---------------------------------------
 
 if (hour9.value === moment().hour())
     {$('#userTask9').css({"background-color":"#ff6961"})}
@@ -170,22 +172,8 @@ function saveLocally() {
 
     localStorage.setItem(key, data)
 }
-// localStorage.setItem('userTask9', JSON.stringify(string));
-// var s = JSON.stringify(obj)
-// var o = JSON.parse(s)
-
 
 saveBtn.on('click', saveLocally)
 
-// submitform(userInput);
-// {
-//     localStorage.setItem( '.present', JSON.stringify() );
-// }
-// formData = JSON.stringify($("#userTask9").serializeArray());
 
-
-// $('.saveBtn').on('click', function(){
-//     let post_vars = $('#userTask1').serializeArray();
-//     localStorage.setItem(id_vars);
-// })
 
