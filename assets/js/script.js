@@ -4,7 +4,7 @@ let currentDay = null, date = null;
 
 let update = function () {
 date = moment(new Date())
-currentDay.html(date.format('LLLL'));
+currentDay.html(date.format('YYYY-MM-DD HH:mm'));
 };
 
 $(document).ready(function(){
@@ -13,16 +13,20 @@ update();
 setInterval(update, 1000);
 });
 
-//-------------------------------------------------------------------
+//-----------SET VARIABLES---------------------------------------------------
 
 let saveBtn = $('saveBtn');
 let clearBtn = $('reset');
+let userInput = $('present')
 
 //-------------------------------------------------------------------
 
-let hour9 = {
-    row: $('#userTask9').get(0), 
-    value: 9};
+
+let hour9 = { 
+    "row": $('#userTask9').get(0),
+    "value": 9};
+
+    console.log(hour9);
 
 let hour10 = {
     row: $('#userTask10').get(0), 
@@ -36,45 +40,43 @@ let hour12 = {
     row: $('#userTask12').get(0),
     value: 12};
 
-let hour1 = {
+let hour13 = {
     row: $('#userTask1').get(0),
     value: 1};
 
-let hour2 = {
+let hour14 = {
     row: $('#userTask2').get(0),
     value: 2};
 
-let hour3 = {
+let hour15 = {
     row: $('#userTask3').get(0),
     value: 3};
 
-let hour4 = {
+let hour16 = {
     row: $('#userTask4').get(0),
     value: 4};
 
-let hour5 = {
+let hour17 = {
     row: $('#userTask5').get(0),
     value: 5};
 
-
     
+ 
 //----------------------------------------------------------------------
 //LOGIC 
 
 
+if (hour9.value === moment().hour())
+    {$('#userTask9').css({"background-color":"#ff6961"})}
+
+else if (hour9.value < moment().hour()) 
+    {$('#userTask9').css({"background-color":"#d3d3d3"})}
+
+else if (hour9.value > moment().hour())
+    {$('#userTask9').css({"background-color":"#77dd77"})}
 
 
-if (hour9 < moment().hour()) 
-    {$('.present').css({"background-color":"#d3d3d3"})}
-else 
-    (hour9 > moment().hour()) 
-    {$('.present').css({"background-color":"#77dd77"})}
-
-
-console.log(hour9);
-
-
-// if (hour10 < moment().hour())
+// if (hour10.value < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
 // else (hour10 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
@@ -89,34 +91,51 @@ console.log(hour9);
 // else (hour12 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
-// if (hour1 < moment().hour())
+// if (hour13 < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
-// else (hour1 > moment().hour())
+// else (hour13 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
-// if (hour2 < moment().hour())
+// if (hour14 < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
-// else (hour2 > moment().hour())
+// else (hour16 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
-// if (hour3 < moment().hour())
+// if (hour15 < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
-// else (hour3 > moment().hour())
+// else (hour16 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
-// if (hour4 < moment().hour())
+// if (hour16 < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
-// else (hour4 > moment().hour())
+// else (hour16 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
-// if (hour5 < moment().hour())
+// if (hour17 < moment().hour())
 //     $('.present').css({"background-color":"#d3d3d3"});
-// else (hour5 > moment().hour())
+// else (hour17 > moment().hour())
 //     $('.present').css({"background-color":"#77dd77"});
 
 
 
 
-//store user data
+//------------STORE USER INPUT---------------------------------------
 
-// localStorage.setItem('userTask', JSON.stringify(string));
+// localStorage.setItem('userTask9', JSON.stringify(string));
+// var s = JSON.stringify(obj)
+// var o = JSON.parse(s)
+
+
+
+// submitform(userInput);
+// {
+//     localStorage.setItem( '.present', JSON.stringify() );
+// }
+// formData = JSON.stringify($("#userTask9").serializeArray());
+
+
+// $('.saveBtn').on('click', function(){
+//     let post_vars = $('#userTask1').serializeArray();
+//     localStorage.setItem(id_vars);
+// })
+

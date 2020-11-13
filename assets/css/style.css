@@ -58,14 +58,25 @@ textarea{
 }
 
 .present {
-  background-color: #ff6961;
+  /* background-color: #ff6961; */
   color: black;
   font-size: 30px;
   width: 85%;
   text-align: center;
 }
 
-
+#userTask9,
+#userTask10,
+#userTask11,
+#userTask12,
+#userTask1,
+#userTask2,
+#userTask3,
+#userTask4,
+#userTask5
+{
+  background-color: rgb(245, 245, 105);
+}
 
 .future {
   background-color: #77dd77;
@@ -81,6 +92,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  font-style:
   
 }
 
