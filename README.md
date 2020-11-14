@@ -1,6 +1,6 @@
    # The Number 1 Daily-Planner
 
-## https://carpegavin.github.io/Daily-Planner/
+##  https://carpegavin.github.io/The-Number-1-Work-Day-Scheduler/
 
 ## The goal of this project was to do the following:
 - Create a calendar application that allows a user to input hourly events creating a daily planner so that their time may be managed effectively.
