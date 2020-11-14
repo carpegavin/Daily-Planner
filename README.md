@@ -15,5 +15,7 @@
 
 ## To accomplich these criteria, I implemented the following:
 - created this repo with a readme.md
-- 
+- set the HTML framework with rows for each hour with a save button
+- Javascript
+ - added current time function with moment
 
