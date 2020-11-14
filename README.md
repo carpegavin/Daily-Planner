@@ -13,7 +13,15 @@
 - the save button saves timeblock data to local storage
 - saved events must persist after page refresh
 
-## To accomplich these criteria, I implemented the following:
+## To meet the above criteria, I implemented the following:
 - created this repo with a readme.md
-- 
+- set the HTML framework with rows for each hour with a save button
+- Javascript/Jquery
+   - added a moment() for the current time
+   - set consts
+   - set an array of hour objects with a key and value
+   - set a for-loop to retrieve user input from local storage
+   - built the logic for each hour using if else statements to reset the row color based upon the current hour
+   - set a function to store user input into local storage onclick
+   - set a function to clear user input from the row fields onclick
 
