@@ -13,7 +13,7 @@
 - the save button saves timeblock data to local storage
 - saved events must persist after page refresh
 
-## To accomplich these criteria, I implemented the following:
+## To meet the above criteria, I implemented the following:
 - created this repo with a readme.md
 - set the HTML framework with rows for each hour with a save button
 - Javascript/Jquery
