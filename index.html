@@ -19,83 +19,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
+    <title>#1 Calendar</title>
   </head>
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">The #1 Work Day Scheduler</h1>
       <br>
-      <p class="lead">Your New Life Starts Here</p><br>
-      
-    <time id="currentDay" class="lead1"></time>
+      <p class="lead">Your New Life Starts Here</p><br><br>
+      <time id="currentDay" class="lead1"></time>
     </header>
     
     <section class="container">
-        
-        <article class="row" id="clear">
-            <button class="hour">09:00</button>
-            <input type="text" name="log" id="userTask9" class="present" size="20" tabindex="10">
-            <button value="submit" class="saveBtn" type="button">&#x1f5ab;</button>
-        </article>
-        
-        <div class="row" id="clear">
-            <button class="hour">10:00</button>
-            <input type="text" name="log" id="userTask10" class="present" size="20" tabindex="10">
-            <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">11:00</button>
-            <input type="text" name="log" id="userTask11" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">12:00</button>
-            <input type="text" name="log" id="userTask12" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">13:00</button>
-            <input type="text" name="log" id="userTask13" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">14:00</button>
-            <input type="text" name="log" id="userTask14" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">15:00</button>
-            <input type="text" name="log" id="userTask15" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">16:00</button>
-            <input type="text" name="log" id="userTask16" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row" id="clear">
-            <button class = "hour">17:00</button>
-            <input type="text" name="log" id="userTask17" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        <br>
-        <div>
-            <button id = "reset" >Clear Calendar</button>
-        </div>
       
-      </section>
+      <row class="row" id="clear">
+        <button class="hour">09:00</button>
+        <input type="text" name="log" id="userTask9" class="present" size="20" tabindex="10">
+        <button value="submit" class="saveBtn" type="button">&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">10:00</button>
+        <input type="text" name="log" id="userTask10" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">11:00</button>
+        <input type="text" name="log" id="userTask11" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">12:00</button>
+        <input type="text" name="log" id="userTask12" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">13:00</button>
+        <input type="text" name="log" id="userTask13" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">14:00</button>
+        <input type="text" name="log" id="userTask14" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">15:00</button>
+        <input type="text" name="log" id="userTask15" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">16:00</button>
+        <input type="text" name="log" id="userTask16" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <row class="row" id="clear">
+        <button class="hour">17:00</button>
+        <input type="text" name="log" id="userTask17" class="present" size="20" tabindex="10">
+        <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
+      </row>
+        
+      <br>
+        
+      <footer>
+        <button id="reset">Clear Calendar</button>
+      </footer>
+      
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script type="text/javascript" src="./assets/js/script.js"></script>
+  
   </body>
+
 </html>
