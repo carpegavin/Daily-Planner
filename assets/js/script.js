@@ -18,7 +18,7 @@ setInterval(update, 1000);
 const saveBtn = $('.saveBtn');
 const clearBtn = $('reset');
 const userInput = $('present');
-const hourBtn = $('hour');
+const hourBtn = $('.hour');
 
 //--------SET ARRAY OF OBJECTS WITH KEYS AND VALUES------------------------
 
@@ -41,23 +41,23 @@ let hour12 = {
 //-----------------------------------
 let hour13 = {
     "row": $('#userTask1').val(),
-    "value": 1};
+    "value": 13};
 //-----------------------------------
 let hour14 = {
     "row": $('#userTask2').val(),
-    "value": 2};
+    "value": 14};
 //-----------------------------------
 let hour15 = {
     "row": $('#userTask3').val(),
-    "value": 3};
+    "value": 15};
 //-----------------------------------
 let hour16 = {
     "row": $('#userTask4').val(),
-    "value": 4};
+    "value": 16};
 //-----------------------------------
 let hour17 = {
     "row": $('#userTask5').val(),
-    "value": 5};
+    "value": 17};
 //-----------------------------------
     
  
@@ -176,17 +176,67 @@ function saveLocally() {
 }
 
 saveBtn.on('click', saveLocally);
+//---------------------------------------------------------------
 
 
-//---------------------------------------------------------------------------
+//----------------CLEAR CALENDAR INPUTS---------------------------
 
-//----------------CLEAR HOURLY INPUTS--------------------------------------
-//--------needs work---------------------
-function removeLocally() {
-    let data = $(this).prev().val();
-    let key = $(this).prev().attr("id");
+$(document).ready(function(){
+    $('#reset').click(function(){				
+        if(confirm("Are you sure you wanna clear it?")){
+            /*Clear all input type="text" box*/
+            $('#clear input[type="text"]').val('') 
+            
+            
+        }					
+    });
+});
 
-    localStorage.removeItem(key, data);
+// function deleteItems(){
+//     $('#reset').click(function(){	
+//     localStorage.clear();
+//     }
 
-} 
-    hourBtn.on('click', removeLocally);
+
+//-----------------CLEAR CALENDAR ATTEMPTS BELOW---------------------
+
+
+// $(document).ready(function(){
+//     $("#reset").click(function(){
+//       $(".row").remove();
+//     });
+//   });
+
+
+//-----------attempt 4--------------------
+// $(document).ready(function(){
+//     $('#reset').click(function(){				
+//         if(confirm("Want to clear?")){
+//             /*Clear all input type="text" box*/
+//             {$('#userTask17').val('');
+            
+            
+//         }					
+    
+
+//------------attempt 3----------------
+// window.onbeforeunload = function() {
+//     localStorage.removeItem(row);
+//     return '';
+//   };
+
+//----------attempt 2----------------
+// function removeInputs() {
+//     let 
+// }
+// hourBtn.on('click', removeInputs)
+
+//----------attempt 1-----------------
+// function removeLocally() {
+//     let data = $(this).prev().val(null);
+//     let key = $(this).prev().attr("id");
+
+//     localStorage.removeItem(key, data);
+
+// } 
+//     hourBtn.on('click', removeLocally);

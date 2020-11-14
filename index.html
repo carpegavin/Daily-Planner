@@ -25,74 +25,74 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">The #1 Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p><br>
-      <div id="currentDay" class="lead"></div>
+      <br>
+      <p class="lead">Your New Life Starts Here</p><br>
+      
+    <time id="currentDay" class="lead1"></time>
     </header>
-    <div class="container">
+    
+    <section class="container">
         
-        <div class="row">
-            <button value="submit" class="hour" type="button">09:00</button>
-            
-            <input type="text" name="log" id="userTask9" class= "present" size="20" tabindex="10">
-            
+        <article class="row" id="clear">
+            <button class="hour">09:00</button>
+            <input type="text" name="log" id="userTask9" class="present" size="20" tabindex="10">
             <button value="submit" class="saveBtn" type="button">&#x1f5ab;</button>
+        </article>
+        
+        <div class="row" id="clear">
+            <button class="hour">10:00</button>
+            <input type="text" name="log" id="userTask10" class="present" size="20" tabindex="10">
+            <button value="Submit" class="saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
-            <button class = "hour">10:00</button>
-            
-            <input type="text" name="log" id="userTask10" class= "present" size="20" tabindex="10">
-            <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
-        </div>
-        
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">11:00</button>
             <input type="text" name="log" id="userTask11" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
 
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">12:00</button>
             <input type="text" name="log" id="userTask12" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">13:00</button>
             <input type="text" name="log" id="userTask13" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">14:00</button>
             <input type="text" name="log" id="userTask14" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">15:00</button>
             <input type="text" name="log" id="userTask15" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">16:00</button>
             <input type="text" name="log" id="userTask16" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         
-        <div class="row">
+        <div class="row" id="clear">
             <button class = "hour">17:00</button>
             <input type="text" name="log" id="userTask17" class= "present" size="20" tabindex="10">
             <button value="Submit" class= "saveBtn" type="button" >&#x1f5ab;</button>
         </div>
         <br>
         <div>
-            <button class = reset>Clear Calendar</button>
+            <button id = "reset" >Clear Calendar</button>
         </div>
       
-    </div>
+      </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

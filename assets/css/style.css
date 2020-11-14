@@ -23,6 +23,18 @@ textarea{
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  
+  
+}
+
+.display-3 {
+  border: solid black 4px;
+  border-radius: 15px;
+  padding:5px;
+  background-color: rgb(197, 28, 56);
+  width: 85%;
+  margin-left: 7%;
+  color: white;
 }
 
 .description{
@@ -58,7 +70,6 @@ textarea{
 }
 
 .present {
-  /* background-color: #ff6961; */
   color: black;
   font-size: 30px;
   width: 85%;
@@ -114,16 +125,16 @@ button {
 
 #currentDay {
 font-size: 40px;
-background-color: rgb(243, 192, 97);
+background-color: rgb(186, 225, 226);
 border-radius: 10px;
-width: 30%;
-border: 1px solid black;
-margin-left: 34%;
-padding-top: 4px;
-padding-bottom: 4px;
+width: 37%;
+border: 3px solid black;
+margin-right: 5%;
+
+padding: 5px;
 }
 
-.reset {
+#reset {
     background-color: orange;
     font-size: 25px;
     border-radius: 10px;
@@ -131,4 +142,28 @@ padding-bottom: 4px;
     width: 20%;
     margin-left: 38%;
     margin-bottom: 20%;
+}
+
+.lead {
+  
+  background: rgb(255, 3, 3);
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;  
+  animation-delay: 1s;
+  width:35%;
+  margin-left:25%;
+  padding: 6px;
+  border-radius: 20px;
+  font-size:35px;
+  color: white;
+  margin-left:31%;
+  border: 3px solid black;
+  
+}
+
+@keyframes example {
+  from {right: 300px; background-color: rgb(43, 28, 180);}
+  to {left: 300px; background-color: rgb(11, 155, 221)}
+  
 }
