@@ -25,3 +25,4 @@
    - set a function to store user input into local storage onclick
    - set a function to clear user input from the row fields onclick
 
+The-Number-1-Work-Day-Scheduler/assets/img/Screenshot 2020-11-13 201048.jpg
