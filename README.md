@@ -26,3 +26,5 @@
    - set a function to clear user input from the row fields onclick
 
 ![The #1 Workday Scheduler](https://github.com/carpegavin/The-Number-1-Work-Day-Scheduler/blob/main/assets/img/Screenshot%202020-11-13%20201048.jpg?raw=true)
+
+© copyright 2020 Gavin H Phill
