@@ -1,6 +1,6 @@
    # The Number 1 Daily-Planner
 
-## https://carpegavin.github.io/Daily-Planner/
+##  https://carpegavin.github.io/The-Number-1-Work-Day-Scheduler/
 
 ## The goal of this project was to do the following:
 - Create a calendar application that allows a user to input hourly events creating a daily planner so that their time may be managed effectively.
@@ -25,3 +25,6 @@
    - set a function to store user input into local storage onclick
    - set a function to clear user input from the row fields onclick
 
+![The #1 Workday Scheduler](https://github.com/carpegavin/The-Number-1-Work-Day-Scheduler/blob/main/assets/img/Screenshot%202020-11-13%20201048.jpg?raw=true)
+
+© copyright 2020 Gavin H Phill
